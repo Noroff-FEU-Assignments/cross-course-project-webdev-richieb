@@ -5,7 +5,7 @@
   /* global css color variables ----------------*/
 
   /* Border colors */
-  --border-dark: #030303;
+  --border-dark: #233143;
   --border-light: #fbf1dd;
 
   /* Background colors */
@@ -61,6 +61,10 @@ body {
 
 .page-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 30px;
   padding: 30px;
   background-color: var(--bg-dark);
   color: var(--text-light);
@@ -71,7 +75,43 @@ body {
   padding: 0;
 }
 
-.nav__link {
+.nav__link,
+.logo {
   text-decoration: none;
   color: var(--text-light);
+}
+
+.nav__link {
+  padding: 0 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.searchfield__label {
+  padding: 10px;
+  margin-right: 6px;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+}
+
+.searchfield__icon {
+  color: var(--text-dark);
+  font-size: large;
+}
+
+#searchfield__input {
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.shopping-cart-link {
+  color: var(--text-light);
+  font-size: x-large;
+  /* border: 2px solid red; */
 }
