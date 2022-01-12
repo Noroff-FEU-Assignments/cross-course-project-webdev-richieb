@@ -1,0 +1,53 @@
+@import url("https://use.typekit.net/tgw2mpa.css");
+
+:root {
+  /* global css color variables ----------------*/
+
+  /* Border colors */
+  --border-dark: #030303;
+  --border-light: #fbf1dd;
+
+  /* Background colors */
+  --bg-dark: #233143;
+  --bg-light: #fbf1dd;
+  --bg-highlight: #ffda9e;
+
+  /* Button colors */
+  --primary-btn-yellow: #ffad29;
+  --primary-btn-yellow-hover: #ffda9e;
+
+  --primary-btn-red: #d32436;
+  --primary-btn-red-hover: #f3bbc1;
+
+  --secondary-btn: #fbf1dd;
+  --secondary-btn-hover: #233143;
+
+  /* Text colors */
+  --text-light: #fbf1dd;
+  --text-dark: #233143;
+}
+
+/* Homepage -----------------------------------*/
+body {
+  margin: 0;
+  font-family: "objektiv-mk1", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.page-header {
+  display: flex;
+  padding: 30px;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--text-light);
+}
