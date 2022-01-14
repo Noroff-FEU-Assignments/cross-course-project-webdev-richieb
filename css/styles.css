@@ -23,9 +23,10 @@
   --secondary-btn: #fbf1dd;
   --secondary-btn-hover: #233143;
 
-  /* Text colors */
-  --text-light: #fbf1dd;
+  /* Text/icon colors */
   --text-dark: #233143;
+  --text-light: #fbf1dd;
+  --text-highlight: #ffda9e;
 }
 
 /* Global classes ------------------------------*/
@@ -59,6 +60,8 @@ body {
 
 /* Homepage -----------------------------------*/
 
+/* Header */
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -85,7 +88,8 @@ body {
   padding: 0 10px;
 }
 
-.header-wrapper {
+.searchfield-container {
+  position: relative;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -93,25 +97,44 @@ body {
 }
 
 .searchfield__label {
-  padding: 10px;
-  margin-right: 6px;
+  position: absolute;
+  top: 15px;
+  left: -65px;
+  color: var(--text-light);
+}
+
+.searchfield__input-container {
+  display: flex;
+  width: 230px;
+  padding: 1.5px 10px 1.5px 1.5px;
+  justify-content: space-between;
+  border-radius: 10px;
   background-color: var(--bg-light);
-  border-radius: 8px;
 }
 
 .searchfield__icon {
-  color: var(--text-dark);
-  font-size: large;
+  flex: 1;
+  align-self: center;
+  padding: 11px 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: var(--text-dark);
+  color: var(--bg-light);
 }
 
 #searchfield__input {
-  padding: 10px;
-  border-radius: 8px;
-  width: 200px;
+  flex: 1 90px;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid var(--border-dark);
+  margin-bottom: 5px;
+  background-color: var(--border-light);
 }
 
 .shopping-cart-link {
-  color: var(--text-light);
-  font-size: x-large;
-  /* border: 2px solid red; */
+  color: var(--text-highlight);
+  font-size: 30px;
+  margin-left: 15px;
 }
+
+/* Main */
