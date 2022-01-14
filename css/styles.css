@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/tgw2mpa.css");
-@import url("https://use.typekit.net/tgw2mpa.css");
 
 :root {
   /* global css color variables ----------------*/
@@ -44,18 +43,22 @@ body {
   font-style: normal;
 }
 
-.font-secondary {
-  font-family: sofia-pro, sans-serif;
+.font-secondary-regular {
+  font-family: "sofia-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.font-secondary--medium {
+.font-secondary-medium {
+  font-family: "sofia-pro", sans-serif;
   font-weight: 500;
+  font-style: normal;
 }
 
-.font-secondary--semiBold {
+.font-secondary-semiBold {
+  font-family: "sofia-pro", sans-serif;
   font-weight: 600;
+  font-style: normal;
 }
 
 /* Homepage -----------------------------------*/
@@ -139,3 +142,41 @@ body {
 }
 
 /* Main */
+
+.homepage-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: auto;
+  background-color: lightblue;
+}
+
+.cta--homepage-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.cta {
+  width: 179px;
+  height: 38px;
+
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  border-radius: 8px;
+
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  text-decoration: none;
+}
+
+.cta--primary-yellow {
+  background-color: var(--primary-btn-yellow);
+  color: var(--text-dark);
+}
