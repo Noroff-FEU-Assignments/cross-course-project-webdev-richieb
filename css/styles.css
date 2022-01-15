@@ -75,6 +75,7 @@ body {
   font-weight: var(--fontWeight-medium);
 }
 
+.homepage-hero__under-title,
 .product-collection,
 .footer-nav__list,
 .footer-copyright__symbol,
@@ -86,6 +87,8 @@ body {
 /* Header */
 
 .page-header {
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 20;
   background-color: var(--bg-dark);
@@ -207,10 +210,21 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.homepage-hero__title {
+.homepage-hero__title,
+.homepage-hero__under-title {
   z-index: 1;
-  font-size: var(--font-h1);
   color: var(--text-light);
+  padding: 0;
+  margin: 0;
+}
+
+.homepage-hero__title {
+  font-size: var(--font-h1);
+}
+
+.homepage-hero__under-title {
+  font-size: var(--font-h2);
+  text-transform: capitalize;
 }
 
 .cta--flex {
@@ -218,23 +232,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 150px;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .cta {
   width: 179px;
   height: 38px;
 
-  font-family: "sofia-pro", sans-serif;
-  font-weight: 500;
-  font-style: bold;
+  font-family: var(--fontFamily-secondary);
+  font-size: var(--font-p1);
+  font-weight: var(--fontWeight-bold);
+  padding-bottom: 4px;
 
   border-radius: 8px;
-
-  font-family: "sofia-pro", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-
   text-decoration: none;
 }
 
