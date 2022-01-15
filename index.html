@@ -12,37 +12,140 @@
     <title>Rainydays | Homepage</title>
   </head>
   <body>
-    <header class="page-header font-primary">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__items">
-            <a href="#" class="nav__link nav__link--highlight">Store</a>
-            <a href="#" class="nav__link">About us</a>
-            <a href="#" class="nav__link">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="index.html" class="logo">
-        <img src="#" alt="Rainyday logo" class="logo__image"
-      /></a>
-      <section class="searchfield-container">
-        <form action="#" method="post" class="searchfield">
-          <div class="searchfield__input-container">
-            <label for="searchfield__input" class="searchfield__label"
-            ><i class="fas fa-search searchfield__icon"></label
-          ></i>
-            <input type="text" id="searchfield__input" />
-          </div>
-        </form>
-        <a href="#" class="shopping-cart-link"
-          ><i class="fas fa-shopping-cart"></i
-        ></a>
-      </section>
+    <header class="page-header">
+      <section class="header-wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#" class="nav__link nav__link--highlight">Store</a>
+              <a href="#" class="nav__link">About us</a>
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html" class="logo">
+          <img src="#" alt="Rainyday logo" class="logo__image"
+        /></a>
+        <div class="right-align-wrapper">
+          <section class="searchfield-container">
+            <label for="searchfield" class="searchfield__label"
+              ><i class="fas fa-search searchfield__icon"></i
+            ></label>
+            <input
+              type="text"
+              name="searchfield"
+              id="searchfield"
+              class="searchfield__input"
+            />
+          </section>
+          <a href="#" class="shopping-cart-link"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </section>
+        </div>
     </header>
-    <main class="main-page">
+    <main class="page-main">
       <section class="homepage-hero">
-        <a href="store.html" class="cta cta--homepage-hero cta--primary-yellow homepage-hero__cta">Hello</a>
-            </section>
+        <h1 class="homepage-hero__title">Your Adventure Avaits</h1>
+        <a href="store.html" class="cta cta--flex cta--primary-yellow"
+          >Shop Now</a
+        >
+      </section>
+      <section class="product-collection">
+        <h3 class="product-collection__title">Choose your collection</h3>
+        <a href="store.html" class="product-category">
+          <img src="/images/pexels-andy-vu-3283121_1.jpg" alt="Cannoing" />
+          <h3 class="product-category__title">The Canoer</h3>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="store.html" class="product-category">
+          <img src="/images/pexels-andy-vu-3217911_1.jpg" alt="Cannoing" />
+          <h3 class="product-category__title">The Outdoorer</h3>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="store.html" class="product-category">
+          <img
+            src="/images/pexels-gantas-vaičiulėnas-1891882.jpg"
+            alt="Cannoing"
+          />
+          <h3 class="product-category__title">The Hiker</h3>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="store.html" class="product-category">
+          <img
+            src="/images/pexels-yaroslav-shuraev-7165175.jpg"
+            alt="Cannoing"
+          />
+          <h3 class="product-category__title">The Skiier</h3>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="store.html" class="product-category">
+          <img src="/images/pexels-uriel-mont-6271680_1.jpg" alt="Cannoing" />
+          <h3 class="product-category__title">The Camper</h3>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="store.html" class="product-category">
+          <img
+            src="/images/pexels-andre-furtado-2916817_1.jpg"
+            alt="Cannoing"
+          />
+          <h3 class="product-category__title">The Explorer</h3>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </section>
     </main>
+    <footer class="page-footer">
+      <section class="footer-wrapper">
+        <nav class="footer-nav-jackets">
+          <h5 class="footer-nav__title">Jacket's</h5>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">The Canoer</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">The Outdoorer</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">The Hiker</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">The Skiier</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">The Camper</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">The Explorer</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav__explore">
+          <h5 class="footer-nav__title">Explore</h5>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact us</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">About us</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="footer-copyright">
+        <p class="footer-copyright__symbol">Copywrite &copy;</p>
+      </section>
+    </footer>
   </body>
 </html>
