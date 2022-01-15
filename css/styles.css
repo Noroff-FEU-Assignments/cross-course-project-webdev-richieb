@@ -77,7 +77,8 @@ body {
 
 .product-collection,
 .footer-nav__list,
-.footer-copyright__symbol {
+.footer-copyright__symbol,
+.searchfield__input {
   font-family: var(--fontFamily-secondary);
   font-weight: var(--fontWeight-medium);
 }
@@ -85,14 +86,16 @@ body {
 /* Header */
 
 .page-header {
+  width: 100%;
+  z-index: 20;
   background-color: var(--bg-dark);
   color: var(--text-light);
 }
 
 .header-wrapper {
+  position: relative;
   max-width: 1800px;
   margin: auto;
-  padding: 30px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
@@ -124,6 +127,7 @@ body {
 }
 
 .logo {
+  margin: 10px 0;
 }
 
 .right-align-wrapper {
@@ -160,10 +164,13 @@ body {
 }
 
 .searchfield__input {
-  width: 210px;
-  padding: 10px 0;
+  width: 205px;
+  padding-bottom: 5px;
   border: none;
   background-color: var(--border-light);
+  font-size: var(--font-p2);
+  font-weight: var(--fontWeight-semiBold);
+  color: var(--text-dark);
 }
 
 .shopping-cart-link {
@@ -181,14 +188,13 @@ body {
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  min-height: 80vh;
   gap: 30px;
-  height: 90vh;
   margin: auto;
   background-image: url("/images/pexels-volker-meyer-3800412.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -200px;
-  z-index: 0;
+  background-position-y: -300px;
 }
 
 .homepage-hero:before {
@@ -270,10 +276,14 @@ body {
   height: 360px;
 }
 
-img {
-  height: 360px;
+.logo__image,
+.product-category__image {
   width: 100%;
   object-fit: cover;
+}
+
+.product-category__image {
+  height: 360px;
 }
 
 .product-category::before {
@@ -323,7 +333,6 @@ img {
 .footer-wrapper {
   display: grid;
   grid-template-columns: minmax(auto, 373px) minmax(10px, auto);
-  height: 100%;
   padding-bottom: 30px;
 }
 
@@ -339,7 +348,6 @@ img {
 
 .footer-copyright {
   background-color: var(--bg-light);
-  height: 100%;
 }
 
 .footer-copyright__symbol {
