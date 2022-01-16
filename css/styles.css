@@ -304,18 +304,17 @@ body {
   color: var(--text-dark);
 }
 
-.product-category__title--lineBreak {
-  max-width: 200px;
-  line-height: 1.2;
-}
-
 .product-category {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: end;
   width: 312px;
   height: 360px;
+}
+
+.product-category__title--lineBreak {
+  max-width: 200px;
+  line-height: 1.2;
 }
 
 .logo__image,
@@ -353,6 +352,7 @@ body {
   font-size: var(--font-h4);
   margin-bottom: 20px;
   color: var(--text-light);
+  align-self: end;
 }
 
 .fa-arrow-right {
@@ -364,6 +364,7 @@ body {
   margin-bottom: 20px;
   background-color: var(--bg-highlight);
   color: var(--text-dark);
+  align-self: end;
 }
 
 /* Footer ---------------------------------------------*/
