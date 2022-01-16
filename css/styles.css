@@ -56,6 +56,7 @@
 /* Css Reset */
 body {
   margin: 0;
+  min-width: 375px;
 }
 
 /* Homepage -----------------------------------*/
@@ -91,7 +92,6 @@ body {
   position: sticky;
   top: 0;
   max-width: 100%;
-  min-width: 375px;
   z-index: 20;
   background-color: var(--bg-dark);
   color: var(--text-light);
@@ -100,7 +100,6 @@ body {
 .header-wrapper {
   position: relative;
   max-width: 1800px;
-  min-width: 375px;
   padding: 0 30px;
   margin: auto;
   display: grid;
@@ -112,10 +111,6 @@ body {
 .hamburger-menu-checkbox,
 .hamburger-menu-label {
   display: none;
-}
-
-.hamburger-menu-label {
-  /* min-height: 64px; */
 }
 
 .fa-bars {
@@ -224,7 +219,6 @@ body {
   justify-content: end;
   align-items: center;
   min-height: 600px;
-  min-width: 375px;
   gap: 30px;
   margin: auto;
   background-image: url("/images/pexels-volker-meyer-3800412.jpg");
@@ -246,7 +240,6 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-items: end;
   align-items: center;
   gap: 40px;
 }
@@ -307,7 +300,13 @@ body {
   grid-column: span 3;
   justify-self: start;
   font-size: var(--font-h3);
+  margin: 45px 0 0 0;
   color: var(--text-dark);
+}
+
+.product-category__title--lineBreak {
+  max-width: 200px;
+  line-height: 1.2;
 }
 
 .product-category {
@@ -453,6 +452,19 @@ body {
     display: none;
   }
 
+  .homepage-hero__wrapper > * {
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .homepage-hero__title {
+    font-size: var(--font-h2);
+  }
+
+  .homepage-hero__under-title {
+    font-size: var(--font-h3);
+  }
+
   .product-collection {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: minmax(5px, auto) 1fr 1fr 1fr;
@@ -464,25 +476,37 @@ body {
 
   .product-collection__title {
     grid-column: span 2;
+    font-size: var(--font-h5);
+    max-width: 350px;
+  }
+
+  .page-footer {
+    padding-top: 0;
   }
 
   .footer-wrapper {
     max-width: 800px;
+    padding: 30px;
     margin: auto;
   }
 }
 
 /* mobile */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .product-collection {
     grid-template-columns: auto;
     grid-template-rows: minmax(5px, auto) repeat(5, auto);
-    height: auto;
-    grid-gap: 45px 52px;
   }
 
   .product-collection__title {
     grid-column: span 1;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav {
+    top: 70px;
   }
 }
