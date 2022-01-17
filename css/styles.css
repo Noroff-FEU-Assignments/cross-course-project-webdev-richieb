@@ -12,6 +12,34 @@
     --color-dark: #233143;
     --color-light: #fbf1dd;
 
+    /* global fonts variables ----------------*/
+
+    /* fontsize */
+    --font-h1: 72px;
+    --font-h2: 60px;
+    --font-h3: 42px;
+    --font-h4: 36px;
+    --font-h5: 30px;
+    --font-h6: 24px;
+    --font-p1: 20px;
+    --font-p2: 16px;
+    --font-p3: 14px;
+
+    /* font families */
+    --fontFamily-primary: "objektiv-mk1", sans-serif;
+    --fontFamily-secondary: "sofia-pro", sans-serif;
+
+    /* font weights */
+    --fontWeight-bold: 800;
+    --fontWeight-semiBold: 600;
+    --fontWeight-medium: 500;
+    --fontWeight-regular: 400;
+}
+
+html {
+    /* Global color declarations for commen css porperties --- */
+    /* Change base color as needed ---------------------*/
+
     /* Border colors */
     --border-dark: var(--color-dark);
     --border-light: var(--color-light);
@@ -35,29 +63,6 @@
     --text-dark: var(--color-dark);
     --text-light: var(--color-light);
     --text-highlight: var(--color-yellow-light);
-
-    /* global fonts variables ----------------*/
-
-    /* fontsize */
-    --font-h1: 72px;
-    --font-h2: 60px;
-    --font-h3: 42px;
-    --font-h4: 36px;
-    --font-h5: 30px;
-    --font-h6: 24px;
-    --font-p1: 20px;
-    --font-p2: 16px;
-    --font-p3: 14px;
-
-    /* font families */
-    --fontFamily-primary: "objektiv-mk1", sans-serif;
-    --fontFamily-secondary: "sofia-pro", sans-serif;
-
-    /* font weights */
-    --fontWeight-bold: 800;
-    --fontWeight-semiBold: 600;
-    --fontWeight-medium: 500;
-    --fontWeight-regular: 400;
 }
 
 /* Global classes ------------------------------*/
