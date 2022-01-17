@@ -216,7 +216,7 @@ body {
     color: var(--text-dark);
 }
 
-.shopping-cart-link {
+.store-page-link {
     color: var(--text-highlight);
     font-size: 30px;
     padding-right: 20px;
