@@ -71,6 +71,8 @@
 body {
     font-family: var(--fontFamily-secondary), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: var(--fontWeight-medium);
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 /* header navigation -- used for all pages*/
