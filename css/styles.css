@@ -227,7 +227,7 @@ body {
     background-position: center;
 }
 
-.home-page-hero:before {
+/* .home-page-hero:before {
     content: "";
     position: absolute;
     left: 0;
@@ -235,7 +235,7 @@ body {
     top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .home-page-hero__wrapper {
     z-index: 1;
