@@ -212,7 +212,7 @@ body {
 /* main section */
 
 .home-page-hero {
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -227,7 +227,7 @@ body {
     background-position: center;
 }
 
-/* .home-page-hero:before {
+.home-page-hero:before {
     content: "";
     position: absolute;
     left: 0;
@@ -235,7 +235,7 @@ body {
     top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
-} */
+}
 
 .home-page-hero__wrapper {
     z-index: 1;
@@ -289,7 +289,7 @@ body {
 }
 
 .product-category {
-    position: relative;
+    /* position: relative; */
     min-width: 312px;
     min-height: 360px;
     background-color: lightblue;
@@ -322,7 +322,7 @@ body {
     background-image: url("/images/explorer-jacket-img.jpg");
 }
 
-.product-category::after {
+/* .product-category::after {
     content: "";
     position: absolute;
     left: 0;
@@ -331,7 +331,7 @@ body {
     bottom: 0;
     background: rgb(226, 218, 172);
     background: linear-gradient(180deg, rgba(226, 218, 172, 0) 0%, rgba(171, 164, 130, 0.41) 35%, rgba(91, 88, 69, 0.69) 69%, rgba(0, 0, 0, 1) 100%);
-}
+} */
 
 .product-category > * {
     z-index: 1;
