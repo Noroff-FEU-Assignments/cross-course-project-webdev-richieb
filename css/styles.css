@@ -34,7 +34,15 @@
     --fontWeight-semiBold: 600;
     --fontWeight-medium: 500;
     --fontWeight-regular: 400;
+}
 
+* {
+    /* Css reset */
+
+    margin: 0;
+}
+
+html {
     /* Global color declarations for commen css porperties --- */
     /* Change base color as needed ---------------------*/
 
@@ -61,11 +69,6 @@
     --text-dark: var(--color-dark);
     --text-light: var(--color-light);
     --text-highlight: var(--color-yellow-light);
-}
-
-/* Css reset */
-* {
-    margin: 0;
 }
 
 body {
@@ -303,6 +306,9 @@ body {
     align-items: end;
     justify-content: space-around;
     text-decoration: none;
+}
+
+.product-category:hover {
 }
 
 .canoer-product-img {
