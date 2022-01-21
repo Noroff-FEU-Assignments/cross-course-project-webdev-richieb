@@ -297,37 +297,30 @@ body {
     position: relative;
     min-width: 312px;
     min-height: 360px;
-    background-color: lightblue;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: grid;
     grid-template-columns: auto minmax(44px, auto);
     align-items: end;
     justify-content: space-around;
     text-decoration: none;
+    box-shadow: 0 0 0 var(--bg-dark);
+
+    transition-property: box-shadow, background-size, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .product-category:hover {
+    box-shadow: 0 3px 6px var(--bg-dark);
+    background-size: 180%;
 }
 
-.canoer-product-img {
-    background-image: url("/images/canoer-jacket-img.jpg");
-}
-.outdoorer-product-img {
-    background-image: url("/images/Outdoor-jacket-img.jpg");
-}
-.hiker-product-img {
-    background-image: url("/images/Hiker-jacket-img.jpg");
-}
-.skiier-product-img {
-    background-image: url("/images/skiier-jacket-img.jpg");
-}
-.camper-product-img {
-    background-image: url("/images/camper-jacket-img.jpg");
-}
-.explorer-product-img {
-    background-image: url("/images/explorer-jacket-img.jpg");
+.product-category:hover > .product-category__icon-wrapper {
+    background-color: var(--bg-highlight);
+    transition: background-color 0.2s ease-out;
 }
 
 .product-category::after {
@@ -353,12 +346,36 @@ body {
     line-height: 1.2;
 }
 
-.fa-arrow-right {
-    padding: 10px;
+.product-category__icon-wrapper {
+    padding: 7px;
+    background-color: var(--bg-light);
     border-radius: 100%;
-    background-color: var(--bg-highlight);
-    color: var(--text-dark);
+    text-align: center;
+}
+
+.fa-arrow-right {
     font-size: var(--font-h5);
+    color: var(--text-dark);
+}
+
+.canoer-product-img {
+    background-image: url("/images/canoer-jacket-img.jpg");
+}
+.outdoorer-product-img {
+    background-image: url("/images/Outdoor-jacket-img.jpg");
+}
+.hiker-product-img {
+    background-image: url("/images/Hiker-jacket-img.jpg");
+}
+.skiier-product-img {
+    background-image: url("/images/skiier-jacket-img.jpg");
+}
+.camper-product-img {
+    background-image: url("/images/camper-jacket-img.jpg");
+}
+.explorer-product-img {
+    background-image: url("/images/explorer-jacket-img.jpg");
+    background-size: 500px;
 }
 
 /* Footer navigation -- used for all pages */
