@@ -14,7 +14,7 @@
 
     /* global fonts variables ----------------*/
 
-    /* fontsize */
+    /* font-sizes */
     --font-h1: 72px;
     --font-h2: 60px;
     --font-h3: 42px;
@@ -43,7 +43,7 @@
 }
 
 html {
-    /* Global color declarations for commen css porperties --- */
+    /* Global color declarations for common css properties --- */
     /* Change base color as needed ---------------------*/
 
     /* Border colors */
@@ -163,6 +163,12 @@ body {
     color: var(--text-highlight);
 }
 
+.header-nav__link:hover,
+.footer-nav__link:hover {
+    text-decoration: var(--border-light) underline 4px;
+    text-underline-offset: 0.2em;
+}
+
 .logo {
     max-width: 200px;
     min-width: 87px;
@@ -204,6 +210,13 @@ body {
 .cta--primary-yellow {
     background-color: var(--primary-btn-yellow);
     color: var(--text-dark);
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.cta--primary-yellow:hover {
+    background-color: var(--primary-btn-yellow-hover);
 }
 
 /* Homepage --------------------------------------------*/
@@ -424,7 +437,7 @@ body {
 
 /* Responsive Design -- Media queries ------------------*/
 
-/* 900px (small tablet) */
+/* 900px -- small tablet */
 
 @media screen and (min-width: 758px) {
     .header-nav {
@@ -454,7 +467,7 @@ body {
     }
 }
 
-/* 1240px (laptop) */
+/* 1240px -- laptop */
 
 @media screen and (min-width: 1100px) {
     .header-wrapper {
