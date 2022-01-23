@@ -78,6 +78,8 @@ body {
     grid-template-rows: auto auto auto;
 }
 
+/* Mobile first declarations -- iPhone X, XS, 11 Pro -- 375 width */
+
 /* header navigation -- used for all pages*/
 
 .page-header {
@@ -100,7 +102,7 @@ body {
 }
 
 .hamburger-menu-checkbox,
-.searchfield-container {
+.searchfield-container__input {
     display: none;
 }
 
@@ -158,8 +160,7 @@ body {
     color: var(--text-light);
 }
 
-.header-nav__link--highlight,
-.cart-page__icon {
+.header-nav__link--highlight {
     color: var(--text-highlight);
 }
 
@@ -190,6 +191,10 @@ body {
     margin-left: 35px;
 }
 
+.cart-page__icon:hover {
+    color: var(--bg-highlight);
+}
+
 /* Call-to-action Buttons -- Used for all pages */
 
 .cta {
@@ -210,16 +215,14 @@ body {
 .cta--primary-yellow {
     background-color: var(--primary-btn-yellow);
     color: var(--text-dark);
-    transition-property: background-color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
+    transition: background-color 0.1s ease-in;
 }
 
 .cta--primary-yellow:hover {
     background-color: var(--primary-btn-yellow-hover);
 }
 
-/* Homepage --------------------------------------------*/
+/* Homepage -- Custom styles ------------------------*/
 
 .page-header,
 .home-page-hero__title,
@@ -239,10 +242,7 @@ body {
     min-width: 375px;
     gap: 30px;
     margin: auto;
-    background-image: url("/images/Homepage-hero-img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: no-repeat center/cover url("/images/Homepage-hero-img.jpg");
 }
 
 .home-page-hero:before {
@@ -310,10 +310,7 @@ body {
     position: relative;
     min-width: 312px;
     min-height: 360px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background: no-repeat center/100%;
     display: grid;
     grid-template-columns: auto minmax(44px, auto);
     align-items: end;
@@ -322,8 +319,7 @@ body {
     box-shadow: 0 0 0 var(--bg-dark);
 
     transition-property: box-shadow, background-size, background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .product-category:hover {
@@ -388,7 +384,7 @@ body {
 }
 .explorer-product-img {
     background-image: url("/images/explorer-jacket-img.jpg");
-    background-size: 500px;
+    background-size: 400px;
 }
 
 /* Footer navigation -- used for all pages */
@@ -489,29 +485,31 @@ body {
     }
 
     .right-align-wrapper {
-        position: relative;
         align-items: center;
     }
 
-    .searchfield-label {
-        position: absolute;
-        left: 83px;
-        background-color: var(--text-dark);
-        align-self: center;
-        padding: 11px;
-        border-radius: 10px;
-    }
-
     .searchfield-container {
-        display: block;
         width: 250px;
         min-height: 50px;
         display: flex;
         align-content: center;
         align-self: center;
-        justify-content: end;
+        justify-content: space-between;
         background-color: var(--bg-light);
         border-radius: 10px;
+    }
+
+    .searchfield-container__input {
+        display: block;
+    }
+
+    .searchfield-label {
+        order: 1;
+        background-color: var(--text-dark);
+        align-self: center;
+        padding: 11px;
+        border-radius: 10px;
+        margin-right: 1px;
     }
 
     .searchfield-container__input {
