@@ -218,13 +218,15 @@ body {
     background-color: var(--primary-btn-yellow-hover);
 }
 
-/* Homepage -- Custom styles ------------------------*/
+/* Typography declarations */
 
 :is(.page-header, .home-page-hero__title, .footer-nav__title) {
     font-family: var(--fontFamily-primary);
 }
 
-/* main section */
+/* Main page ------------*/
+
+/* Homepage Hero Section ---------*/
 
 .home-page-hero {
     position: relative;
@@ -279,16 +281,12 @@ body {
 
 .product-collection {
     margin: 0 auto 50px auto;
-
     display: grid;
     grid-template-columns: 312px;
     grid-template-rows: minmax(5px, auto);
     grid-auto-rows: 360px;
     grid-gap: 52px 43px;
-
     justify-content: center;
-
-    font-family: var(--fontFamily-secondary);
 }
 
 .product-collection__title {
@@ -302,7 +300,7 @@ body {
 
 .product-category {
     position: relative;
-    min-width: 312px;
+    min-width: 250px;
     min-height: 360px;
     background: no-repeat center/100%;
     display: grid;
@@ -361,6 +359,11 @@ body {
     color: var(--text-dark);
 }
 
+/* modified icon for hero section on collection page */
+.fa-arrow-right--small {
+    font-size: var(--font-h6);
+}
+
 .canoer-product-img {
     background-image: url("/images/canoer-jacket-img.jpg");
 }
@@ -382,6 +385,66 @@ body {
 }
 
 /* All collections page -- Custom styles ------------------------*/
+
+/* All-Collection-Page Hero Section ---------*/
+
+.collections-page-hero {
+    min-width: 375px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--bg-highlight);
+}
+
+.collections-page-hero__wrapper {
+    margin: auto;
+    max-width: 375px;
+    display: grid;
+    padding: 50px 20px;
+    grid-template-columns: 344px;
+    grid-template-rows: minmax(10px, auto) 224px;
+    grid-gap: 48px 0;
+    justify-content: center;
+}
+
+.collections-page-hero__title {
+    font-size: var(--font-h4);
+    font-family: var(--fontFamily-primary);
+}
+
+.collections-page-hero__product-category {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 168px 56px;
+    text-decoration: none;
+}
+
+.collection-page-hero__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.collections-page-hero__category-description {
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.collection-page-hero__category-title {
+    font-family: var(--fontFamily-primary);
+    font-size: var(--font-p1);
+    color: var(--text-light);
+    padding-top: 2px;
+}
+
+.collection-page-hero__category-icon-wrapper {
+    padding: 3px 4.5px;
+    background-color: var(--bg-light);
+    border-radius: 100%;
+    text-align: center;
+}
 
 /* Footer navigation -- used for all pages */
 
