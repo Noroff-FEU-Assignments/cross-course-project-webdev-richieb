@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/tgw2mpa.css");
 
 :root {
-    /* global css base color variables ----------------*/
+    /* global css base color variables -- change as needed --------------*/
 
     --color-yellow: #ffad29;
     --color-yellow-light: #ffda9e;
@@ -44,7 +44,6 @@
 
 html {
     /* Global color declarations for common css properties --- */
-    /* Change base color as needed ---------------------*/
 
     /* Border colors */
     --border-dark: var(--color-dark);
