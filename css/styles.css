@@ -105,9 +105,7 @@ body {
     display: none;
 }
 
-.hamburger-menu-icon,
-.searchfield-icon,
-.cart-page__icon {
+:is(.hamburger-menu-icon, .searchfield-icon, .cart-page__icon) {
     font-size: var(--font-h6);
 }
 
@@ -163,8 +161,7 @@ body {
     color: var(--text-highlight);
 }
 
-.header-nav__link:hover,
-.footer-nav__link:hover {
+:is(.header-nav__link, .footer-nav__link):hover {
     text-decoration: var(--border-light) underline 4px;
     text-underline-offset: 0.2em;
 }
@@ -223,9 +220,7 @@ body {
 
 /* Homepage -- Custom styles ------------------------*/
 
-.page-header,
-.home-page-hero__title,
-.footer-nav__title {
+:is(.page-header, .home-page-hero__title, .footer-nav__title) {
     font-family: var(--fontFamily-primary);
 }
 
@@ -385,6 +380,8 @@ body {
     background-image: url("/images/explorer-jacket-img.jpg");
     background-size: 400px;
 }
+
+/* All collections page -- Custom styles ------------------------*/
 
 /* Footer navigation -- used for all pages */
 
