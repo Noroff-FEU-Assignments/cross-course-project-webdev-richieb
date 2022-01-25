@@ -24,6 +24,7 @@
     --font-p1: 20px;
     --font-p2: 16px;
     --font-p3: 14px;
+    --font-p4: 12px;
 
     /* font families */
     --fontFamily-primary: "objektiv-mk1", sans-serif;
@@ -207,7 +208,7 @@ body {
     color: var(--text-dark);
     transition: background-color 0.1s ease-in;
 
-    margin: 5px;
+    margin: 10px;
 }
 
 .cta:hover {
@@ -349,15 +350,14 @@ body {
     transition: background-color 0.2s ease-out;
 }
 
-.product-category::after {
+.product-category:after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(226, 218, 172);
-    background: linear-gradient(180deg, rgba(226, 218, 172, 0) 0%, rgba(171, 164, 130, 0.41) 35%, rgba(91, 88, 69, 0.69) 69%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(180deg, rgba(226, 218, 172, 0) 0%, rgba(171, 164, 130, 0) 35%, rgba(91, 88, 69, 0.69) 69%, rgba(0, 0, 0, 1) 100%);
 }
 
 .product-category > * {
@@ -405,8 +405,7 @@ body {
     background-image: url("/images/camper-jacket-img.jpg");
 }
 .explorer-product-img {
-    background-image: url("/images/explorer-jacket-img.jpg");
-    background-size: 400px;
+    background-image: url("/images/Explorer-jacket-img.jpg");
 }
 
 /* All collections page -- Custom styles ------------------------*/
@@ -434,13 +433,37 @@ body {
 .product-collection-banner__title {
     font-size: var(--font-h4);
     font-family: var(--fontFamily-primary);
+    color: var(--text-dark);
 }
 
 .product-collection-category {
+    position: relative;
     display: grid;
     grid-template-columns: 320px;
     grid-template-rows: 168px 56px;
     text-decoration: none;
+}
+
+.product-collection-category__discount {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: var(--bg-light);
+}
+
+.product-collection-category__discount-rate {
+    text-align: center;
+    font-size: var(--font-p4);
+    font-family: var(--fontFamily-primary);
+    color: var(--text-dark);
+    padding-top: 7px;
+}
+
+.product-collection-category--small {
+    grid-template-columns: 160px;
+    grid-template-rows: 208px 88px;
 }
 
 .product-collection-category__image {
@@ -454,14 +477,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 8px;
+    color: var(--text-light);
 }
 
 .product-collection-category__title {
     font-family: var(--fontFamily-primary);
     font-size: var(--font-p1);
-    color: var(--text-light);
     padding-top: 2px;
+}
+
+.product-collection-category__product-price {
+    font-family: var(--fontFamily-primary);
+    font-size: var(--font-p2);
+    padding-top: 10px;
 }
 
 .product-collection-category__icon-wrapper {
@@ -469,26 +498,40 @@ body {
     background-color: var(--bg-light);
     border-radius: 100%;
     text-align: center;
+    align-self: end;
 }
 
-.product-view-section {
+.product-specific-section {
     min-width: 375px;
-    height: 50px;
-
     padding: 26px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, auto));
+    grid-template-rows: minmax(72px, auto) auto;
+    grid-auto-rows: auto;
+    grid-gap: 24px;
+    justify-content: center;
 }
 
-.product-view__btn-wrapper {
-    margin: auto;
-    width: 325px;
+.product-specific-filter-buttons,
+.product-specific-section__title {
+    grid-column: span 2;
+}
+
+.product-specific-filter-buttons {
+    width: 100%;
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid var(--bg-dark);
 
+    border-bottom: 3px solid var(--bg-dark);
     padding-bottom: 24px;
+}
+
+.product-specific-section__title {
+    font-size: var(--font-h5);
+    padding-top: 24px;
 }
 
 /* Footer navigation -- used for all pages */
@@ -559,6 +602,15 @@ body {
 
     .product-category__title {
         font-size: var(--font-h4);
+    }
+
+    .product-specific-section {
+        grid-template-columns: repeat(3, minmax(160px, auto));
+    }
+
+    .product-specific-filter-buttons,
+    .product-specific-section__title {
+        grid-column: span 3;
     }
 
     .footer-wrapper {
@@ -639,6 +691,15 @@ body {
 
     .product-collection__title {
         grid-column: span 3;
+    }
+
+    .product-specific-section {
+        grid-template-columns: repeat(4, minmax(160px, auto));
+    }
+
+    .product-specific-filter-buttons,
+    .product-specific-section__title {
+        grid-column: span 4;
     }
 
     .footer-wrapper {
