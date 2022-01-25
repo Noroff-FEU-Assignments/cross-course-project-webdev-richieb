@@ -413,14 +413,14 @@ body {
 
 /* All-Collection-Page Hero Section ---------*/
 
-.collections-page-hero {
+.product-collection-banner {
     min-width: 375px;
     max-width: 1024px;
     margin: 0 auto;
     background-color: var(--bg-highlight);
 }
 
-.collections-page-hero__wrapper {
+.product-collection-banner__wrapper {
     margin: auto;
     max-width: 375px;
     display: grid;
@@ -431,25 +431,25 @@ body {
     justify-content: center;
 }
 
-.collections-page-hero__title {
+.product-collection-banner__title {
     font-size: var(--font-h4);
     font-family: var(--fontFamily-primary);
 }
 
-.collections-page-hero__product-category {
+.product-collection-category {
     display: grid;
     grid-template-columns: 320px;
     grid-template-rows: 168px 56px;
     text-decoration: none;
 }
 
-.collection-page-hero__image {
+.product-collection-category__image {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.collections-page-hero__category-description {
+.product-collection-category__description {
     background-color: var(--bg-dark);
     display: flex;
     justify-content: space-between;
@@ -457,14 +457,14 @@ body {
     padding: 0 20px;
 }
 
-.collection-page-hero__category-title {
+.product-collection-category__title {
     font-family: var(--fontFamily-primary);
     font-size: var(--font-p1);
     color: var(--text-light);
     padding-top: 2px;
 }
 
-.collection-page-hero__category-icon-wrapper {
+.product-collection-category__icon-wrapper {
     padding: 3px 4.5px;
     background-color: var(--bg-light);
     border-radius: 100%;
