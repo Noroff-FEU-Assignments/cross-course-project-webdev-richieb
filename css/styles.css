@@ -78,7 +78,7 @@ body {
     grid-template-rows: auto minmax(1000px, auto) auto;
 }
 
-/* Mobile first declarations -- iPhone X, XS, 11 Pro -- 375 width */
+/* Mobile first declarations -- 320 width */
 
 /* header navigation -- used for all pages*/
 
@@ -261,7 +261,7 @@ body {
     justify-content: end;
     align-items: center;
     min-height: 600px;
-    min-width: 375px;
+    min-width: 320px;
     gap: 30px;
     margin: auto;
     background: no-repeat center/cover url("/images/Homepage-hero-img.jpg");
@@ -413,27 +413,56 @@ body {
 /* All-Collection-Page Hero Section ---------*/
 
 .product-collection-banner {
-    min-width: 375px;
+    min-width: 320px;
     max-width: 1024px;
     margin: 0 auto;
     background-color: var(--bg-highlight);
 }
+/* banner image for specific collection page */
+
+.specific-collection-banner-img {
+    position: relative;
+    background: url("/images/canoer-banner-image.jpg") no-repeat center/cover;
+}
+
+.specific-collection-banner-img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(226, 218, 172, 0) 0%, rgba(171, 164, 130, 0) 35%, rgba(91, 88, 69, 0.69) 69%, rgba(0, 0, 0, 1) 100%);
+}
 
 .product-collection-banner__wrapper {
     margin: auto;
-    max-width: 375px;
+    max-width: 335px;
     display: grid;
     padding: 50px 0px;
     grid-template-columns: 344px;
     grid-template-rows: minmax(10px, auto) 224px;
     grid-gap: 48px 0;
-    justify-content: center;
+}
+
+.product-specific-banner__wrapper {
+    margin: auto;
+    max-width: 335px;
+    height: 504px;
+    padding: 20px 0;
+    display: flex;
+    align-items: end;
 }
 
 .product-collection-banner__title {
     font-size: var(--font-h4);
     font-family: var(--fontFamily-primary);
     color: var(--text-dark);
+}
+
+.product-collection-banner__title--color-light {
+    color: var(--text-light);
+    z-index: 1;
 }
 
 .product-collection-category {
@@ -502,7 +531,7 @@ body {
 }
 
 .product-specific-section {
-    min-width: 375px;
+    min-width: 320px;
     padding: 26px 0;
     display: grid;
     grid-template-columns: repeat(2, minmax(160px, auto));
@@ -536,7 +565,7 @@ body {
     top: 0px;
 
     display: grid;
-    grid-template-columns: 375px;
+    grid-template-columns: 320px;
     grid-template-rows: 50px 450px 118px;
 
     background-color: var(--bg-dark);
@@ -602,7 +631,7 @@ body {
 /* Footer navigation -- used for all pages */
 
 .page-footer {
-    min-width: 375px;
+    min-width: 320px;
     display: grid;
     grid-template-rows: minmax(312px, auto) minmax(24px, auto);
     background-color: var(--bg-dark);

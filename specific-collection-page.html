@@ -10,5 +10,240 @@
         <link rel="stylesheet" href="icons/fontawesome-free-5.15.4-web/icons-stylesheet/all.css" />
         <title>Rainydays | The Canoer Jackets Collection</title>
     </head>
-    <body></body>
+    <body>
+        <header class="page-header">
+            <div class="header-wrapper">
+                <label class="hamburger-menu-label" for="hamburger-menu"><i class="fas fa-bars hamburger-menu-icon"></i></label>
+                <input class="hamburger-menu-checkbox" type="checkbox" id="hamburger-menu" />
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__items">
+                            <a href="all-collections-page.html" class="header-nav__link header-nav__link--highlight">Jacket's</a>
+                        </li>
+                        <li class="header-nav__items">
+                            <a href="about-page.html" class="header-nav__link">About</a>
+                        </li>
+                        <li class="header-nav__items">
+                            <a href="contact-page.html" class="header-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo" aria-label="link to homepage">
+                    <img src="/images/RainyDays_Logo_Without-slogen_Desktop-Logo.png" alt="Rainyday logo" class="logo__image" />
+                </a>
+                <div class="right-align-wrapper">
+                    <div class="searchfield-container">
+                        <label class="searchfield-label" for="searchfield">
+                            <i class="fas fa-search searchfield-icon"></i>
+                        </label>
+                        <input class="searchfield-container__input" type="text" name="searchfield" id="searchfield" placeholder="Type here" />
+                    </div>
+                    <a href="#" class="cart-page-link" aria-label="link to cart page">
+                        <i class="fas fa-shopping-cart cart-page__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="page-main">
+            <section class="product-collection-banner specific-collection-banner-img">
+                <div class="product-specific-banner__wrapper">
+                    <h1 class="product-collection-banner__title product-collection-banner__title--color-light">The Canoer Jackets</h1>
+                </div>
+            </section>
+            <section class="product-specific-section">
+                <div class="product-specific-filter-buttons">
+                    <label for="filter-menu__display-checkbox" class="cta cta--small-btn cta--white product-specific-filter-btn">Filter</label>
+                    <input type="checkbox" name="filter-menu-checkbox" id="filter-menu__display-checkbox" />
+                    <div class="filter-menu">
+                        <div class="filter-menu__header">
+                            <p class="filter-menu__header-title">Filter</p>
+                            <a href="all-collections-page.html" class="filter-menu__header-back-link">
+                                Back
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                        <div class="filter-menu__content-wrapper">
+                            <div class="filter-menu__options">
+                                <p class="filter-menu__title">Size</p>
+                                <ul class="filter-menu__list">
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">small</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">medium</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">large</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">x-large</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-menu__options">
+                                <p class="filter-menu__title">Color</p>
+                                <ul class="filter-menu__list">
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">Blue</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">red</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">green</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="all-collections-page.html" class="cta cta--small-btn cta--white filter-menu__show-results-btn">Show results</a>
+                    </div>
+                </div>
+                <h2 class="product-specific-section__title">All jackets</h2>
+                <a href="specific-product-page.html" class="product-collection-category product-collection-category--small">
+                    <div class="product-collection-category__discount">
+                        <p class="product-collection-category__discount-rate">20%</p>
+                    </div>
+                    <img src="/images/Canoer-jacket-img.jpg" class="product-collection-category__image" alt="Canoer jacket collection" />
+                    <div class="product-collection-category__description">
+                        <div class="product-collection-category__flex-wrapper">
+                            <h2 class="product-collection-category__title">Droplet</h2>
+                            <p class="product-collection-category__under-title">The Canoer</p>
+                            <p class="product-collection-category__product-price">1500kr</p>
+                        </div>
+                        <div class="product-collection-category__icon-wrapper">
+                            <i class="fas fa-arrow-right fa-arrow-right--small"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="specific-product-page.html" class="product-collection-category product-collection-category--small">
+                    <div class="product-collection-category__discount">
+                        <p class="product-collection-category__discount-rate">20%</p>
+                    </div>
+                    <img src="/images/Canoer-jacket-img.jpg" class="product-collection-category__image" alt="Canoer jacket collection" />
+                    <div class="product-collection-category__description">
+                        <div class="product-collection-category__flex-wrapper">
+                            <h2 class="product-collection-category__title">Droplet</h2>
+                            <p class="product-collection-category__under-title">The Canoer</p>
+                            <p class="product-collection-category__product-price">1500kr</p>
+                        </div>
+                        <div class="product-collection-category__icon-wrapper">
+                            <i class="fas fa-arrow-right fa-arrow-right--small"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="specific-product-page.html" class="product-collection-category product-collection-category--small">
+                    <div class="product-collection-category__discount">
+                        <p class="product-collection-category__discount-rate">20%</p>
+                    </div>
+                    <img src="/images/Canoer-jacket-img.jpg" class="product-collection-category__image" alt="Canoer jacket collection" />
+                    <div class="product-collection-category__description">
+                        <div class="product-collection-category__flex-wrapper">
+                            <h2 class="product-collection-category__title">Droplet</h2>
+                            <p class="product-collection-category__under-title">The Canoer</p>
+                            <p class="product-collection-category__product-price">1500kr</p>
+                        </div>
+                        <div class="product-collection-category__icon-wrapper">
+                            <i class="fas fa-arrow-right fa-arrow-right--small"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="specific-product-page.html" class="product-collection-category product-collection-category--small">
+                    <div class="product-collection-category__discount">
+                        <p class="product-collection-category__discount-rate">20%</p>
+                    </div>
+                    <img src="/images/Canoer-jacket-img.jpg" class="product-collection-category__image" alt="Canoer jacket collection" />
+                    <div class="product-collection-category__description">
+                        <div class="product-collection-category__flex-wrapper">
+                            <h2 class="product-collection-category__title">Droplet</h2>
+                            <p class="product-collection-category__under-title">The Canoer</p>
+                            <p class="product-collection-category__product-price">1500kr</p>
+                        </div>
+                        <div class="product-collection-category__icon-wrapper">
+                            <i class="fas fa-arrow-right fa-arrow-right--small"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="specific-product-page.html" class="product-collection-category product-collection-category--small">
+                    <div class="product-collection-category__discount">
+                        <p class="product-collection-category__discount-rate">20%</p>
+                    </div>
+                    <img src="/images/Canoer-jacket-img.jpg" class="product-collection-category__image" alt="Canoer jacket collection" />
+                    <div class="product-collection-category__description">
+                        <div class="product-collection-category__flex-wrapper">
+                            <h2 class="product-collection-category__title">Droplet</h2>
+                            <p class="product-collection-category__under-title">The Canoer</p>
+                            <p class="product-collection-category__product-price">1500kr</p>
+                        </div>
+                        <div class="product-collection-category__icon-wrapper">
+                            <i class="fas fa-arrow-right fa-arrow-right--small"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="specific-product-page.html" class="product-collection-category product-collection-category--small">
+                    <div class="product-collection-category__discount">
+                        <p class="product-collection-category__discount-rate">20%</p>
+                    </div>
+                    <img src="/images/Canoer-jacket-img.jpg" class="product-collection-category__image" alt="Canoer jacket collection" />
+                    <div class="product-collection-category__description">
+                        <div class="product-collection-category__flex-wrapper">
+                            <h2 class="product-collection-category__title">Droplet</h2>
+                            <p class="product-collection-category__under-title">The Canoer</p>
+                            <p class="product-collection-category__product-price">1500kr</p>
+                        </div>
+                        <div class="product-collection-category__icon-wrapper">
+                            <i class="fas fa-arrow-right fa-arrow-right--small"></i>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="footer-wrapper">
+                <nav class="footer-nav__jackets">
+                    <h4 class="footer-nav__title">Jacket's</h4>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="specific-collection-page.html" class="footer-nav__link">The Canoer</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="specific-collection-page.html" class="footer-nav__link">The Outdoorer</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="specific-collection-page.html" class="footer-nav__link">The Hiker</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="specific-collection-page.html" class="footer-nav__link">The Skier</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="specific-collection-page.html" class="footer-nav__link">The Camper</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="specific-collection-page.html" class="footer-nav__link">The Explorer</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav__explore">
+                    <h4 class="footer-nav__title">Explore</h4>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="contact-page.html" class="footer-nav__link">Contact us</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="about-page.html" class="footer-nav__link">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="footer-copyright">
+                <p class="footer-copyright__symbol">Copyright &COPY;</p>
+            </section>
+        </footer>
+    </body>
 </html>
