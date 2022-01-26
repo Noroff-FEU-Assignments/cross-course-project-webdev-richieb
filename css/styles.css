@@ -86,7 +86,7 @@ body {
     position: sticky;
     top: 0;
     max-width: 100%;
-    z-index: 20;
+    z-index: 2;
     background-color: var(--bg-dark);
     color: var(--text-light);
 }
@@ -408,7 +408,7 @@ body {
     background-image: url("/images/Explorer-jacket-img.jpg");
 }
 
-/* All collections page -- Custom styles ------------------------*/
+/* collection and specific product page ------------------------*/
 
 /* All-Collection-Page Hero Section ---------*/
 
@@ -444,6 +444,11 @@ body {
     text-decoration: none;
 }
 
+.product-collection-category--small {
+    grid-template-columns: 160px;
+    grid-template-rows: 208px 88px;
+}
+
 .product-collection-category__discount {
     position: absolute;
     top: 10px;
@@ -459,11 +464,6 @@ body {
     font-family: var(--fontFamily-primary);
     color: var(--text-dark);
     padding-top: 7px;
-}
-
-.product-collection-category--small {
-    grid-template-columns: 160px;
-    grid-template-rows: 208px 88px;
 }
 
 .product-collection-category__image {
@@ -522,11 +522,76 @@ body {
     height: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     border-bottom: 3px solid var(--bg-dark);
     padding-bottom: 24px;
+}
+
+.filter-menu {
+    z-index: 3;
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows: 50px 450px 118px;
+
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    transition: top 4s ease-in;
+}
+
+.filter-menu__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid var(--border-light);
+}
+
+.filter-menu__header-back-link {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.filter-menu__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.filter-menu__options {
+    border-bottom: 3px solid var(--border-light);
+    padding-bottom: 70px;
+}
+
+.filter-menu__list {
+    list-style: none;
+}
+
+.filter-menu__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.filter-menu__show-results-btn {
+    margin-bottom: 62px;
+    justify-self: center;
+}
+
+.filter-menu__show-results-btn:hover {
+    border: 2px solid var(--border-light);
+}
+#filter-menu__display-checkbox {
+    display: none;
+}
+
+#filter-menu__display-checkbox:checked + .filter-menu {
+    visibility: visible;
 }
 
 .product-specific-section__title {

@@ -61,10 +61,60 @@
             </section>
             <section class="product-specific-section">
                 <div class="product-specific-filter-buttons">
-                    <a href="#" class="cta cta--small-btn cta--white">Filter</a>
-                    <a href="#" class="cta cta--small-btn cta--white">Sort</a>
+                    <label for="filter-menu__display-checkbox" class="cta cta--small-btn cta--white product-specific-filter-btn">Filter</label>
+                    <input type="checkbox" name="filter-menu-checkbox" id="filter-menu__display-checkbox" />
+                    <div class="filter-menu">
+                        <div class="filter-menu__header">
+                            <p class="filter-menu__header-title">Filter</p>
+                            <a href="all-collections-page.html" class="filter-menu__header-back-link">
+                                Back
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                        <div class="filter-menu__content-wrapper">
+                            <div class="filter-menu__options">
+                                <p class="filter-menu__title">Size</p>
+                                <ul class="filter-menu__list">
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">small</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">medium</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">large</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">x-large</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-menu__options">
+                                <p class="filter-menu__title">Color</p>
+                                <ul class="filter-menu__list">
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">Blue</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">red</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                    <li class="filter-menu__item">
+                                        <label for="filter-menu__checkbox">green</label>
+                                        <input type="checkbox" name="filter-menu__checkbox" id="filter-menu__checkbox" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="all-collections-page.html" class="cta cta--small-btn cta--white filter-menu__show-results-btn">Show results</a>
+                    </div>
                 </div>
-                <h2 class="product-specific-section__title">All jackets</h2>
+                <h2 id="all-jackets-anchor" class="product-specific-section__title">All jackets</h2>
                 <a href="store.html" class="product-collection-category product-collection-category--small">
                     <div class="product-collection-category__discount">
                         <p class="product-collection-category__discount-rate">20%</p>
@@ -73,7 +123,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Droplet</h2>
-                            <p class="product-collection-category__under-title">Canoer Jacket</p>
+                            <p class="product-collection-category__under-title">The Canoer</p>
                             <p class="product-collection-category__product-price">1500kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -89,7 +139,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Steep</h2>
-                            <p class="product-collection-category__under-title">Skier Jacket</p>
+                            <p class="product-collection-category__under-title">The Skier</p>
                             <p class="product-collection-category__product-price">500kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -105,7 +155,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Agile</h2>
-                            <p class="product-collection-category__under-title">Camper Jacket</p>
+                            <p class="product-collection-category__under-title">The Camper</p>
                             <p class="product-collection-category__product-price">200kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -119,7 +169,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Mounty</h2>
-                            <p class="product-collection-category__under-title">Hiker Jacket</p>
+                            <p class="product-collection-category__under-title">The Hiker</p>
                             <p class="product-collection-category__product-price">2000kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -132,10 +182,10 @@
                     <div class="product-collection-category__discount">
                         <p class="product-collection-category__discount-rate">20%</p>
                     </div>
-                    <div class="product-collection-category__description">
+                    <div class="product-collection-category__description padding-outdoor">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Seeker</h2>
-                            <p class="product-collection-category__under-title">Outdoorer Jacket</p>
+                            <p class="product-collection-category__under-title">The Outdoorer</p>
                             <p class="product-collection-category__product-price">1500kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -151,7 +201,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Rainy</h2>
-                            <p class="product-collection-category__under-title">Explorer Jacket</p>
+                            <p class="product-collection-category__under-title">The Explorer</p>
                             <p class="product-collection-category__product-price">1000kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -165,7 +215,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Mounty</h2>
-                            <p class="product-collection-category__under-title">Hiker Jacket</p>
+                            <p class="product-collection-category__under-title">The Hiker</p>
                             <p class="product-collection-category__product-price">2000kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
@@ -181,7 +231,7 @@
                     <div class="product-collection-category__description">
                         <div class="product-collection-category__flex-wrapper">
                             <h2 class="product-collection-category__title">Steep</h2>
-                            <p class="product-collection-category__under-title">Skier Jacket</p>
+                            <p class="product-collection-category__under-title">The Skier</p>
                             <p class="product-collection-category__product-price">500kr</p>
                         </div>
                         <div class="product-collection-category__icon-wrapper">
