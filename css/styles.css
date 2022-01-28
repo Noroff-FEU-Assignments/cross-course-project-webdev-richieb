@@ -41,6 +41,7 @@
    /* Css reset */
 
    margin: 0;
+   text-decoration: none;
 }
 
 html {
@@ -78,9 +79,9 @@ body {
    grid-template-rows: auto minmax(1000px, auto) auto;
 }
 
-/* Mobile first declarations -- 320 width */
+/* Mobile First Base Declarations -- 320 width -----------------------------------*/
 
-/* header navigation -- used for all pages*/
+/* Header Navigation -- used for all pages*/
 
 .page-header {
    position: sticky;
@@ -154,7 +155,6 @@ body {
 
 .header-nav__link,
 .cart-page-link {
-   text-decoration: none;
    color: var(--text-light);
 }
 
@@ -197,9 +197,10 @@ body {
 .cta {
    display: inline-block;
    padding: 6px 0;
-   text-decoration: none;
+
    text-align: center;
    border-radius: 8px;
+   color: var(--text-dark);
 
    transition: background-color 0.1s ease-in;
 }
@@ -256,7 +257,8 @@ body {
 /* Typography declarations */
 
 :is(.page-header, .home-page-hero__title, .footer-nav__title),
-:is(.specific-product-details__title, .specific-product-details__price) {
+:is(.specific-product-details__title, .specific-product-details__price),
+:is(.checkout-carted-products__title, .checkout-carted-products__items-description-title, .checkout-carted-products__items-description-price) {
    font-family: var(--fontFamily-primary);
 }
 
@@ -341,7 +343,7 @@ body {
    grid-template-columns: auto minmax(44px, auto);
    align-items: end;
    justify-content: space-around;
-   text-decoration: none;
+
    box-shadow: 0 0 0 var(--bg-dark);
 
    transition-property: box-shadow, background-size, background-color;
@@ -477,7 +479,6 @@ body {
    display: grid;
    grid-template-columns: 286px;
    grid-template-rows: 168px 56px;
-   text-decoration: none;
 }
 
 .product-collection-category--small {
@@ -587,7 +588,6 @@ body {
 
 .filter-menu__header-back-link {
    color: var(--text-light);
-   text-decoration: none;
 }
 
 .filter-menu__content-wrapper {
@@ -748,6 +748,12 @@ body {
    border: 3px solid var(--border-dark);
 }
 
+.specific-product-details__quantity-add--revert-color,
+.specific-product-details__quantity-amount--revert-color,
+.specific-product-details__quantity-subtract--revert-color {
+   border: 3px solid var(--border-light);
+}
+
 .specific-product-details__quantity-add {
    border-radius: 4px 0px 0 4px;
    border-right: 0;
@@ -761,6 +767,11 @@ body {
 :is(.specific-product-details__quantity-add, .specific-product-details__quantity-subtract):hover {
    background-color: var(--bg-dark);
    color: var(--text-light);
+}
+
+:is(.specific-product-details__quantity-add--revert-color, .specific-product-details__quantity-subtract--revert-color):hover {
+   background-color: var(--bg-light);
+   color: var(--text-dark);
 }
 
 .specific-product-details__order-btn {
@@ -788,6 +799,96 @@ body {
 .specific-product-details__description-care-wrapper,
 .specific-product-details__care {
    border-top: 3px solid var(--border-dark);
+}
+
+/* Checkout page */
+
+.checkout-section-wrapper {
+   padding: 25px 15px;
+   min-width: 290px;
+}
+
+.checkout-return-btn-wrapper {
+   padding-bottom: 25px;
+   border-bottom: 3px solid var(--border-dark);
+}
+
+.checkout-carted-products {
+   padding-top: 25px;
+   display: grid;
+   grid-template-rows: auto auto auto;
+   row-gap: 25px;
+}
+
+.checkout-carted-products__title {
+   font-size: var(--font-h4);
+}
+
+.checkout-carted-products__items {
+   display: grid;
+   grid-template-columns: 135px 155px;
+   grid-auto-rows: 238px;
+}
+
+.checkout-carted-products__items-img {
+   background: url("/images/Canoer-jacket-img.jpg") no-repeat center/cover;
+}
+
+.checkout-carted-products__items-img--skier {
+   background: url("/images/skiier-jacket-img.jpg") no-repeat center/cover;
+}
+
+.checkout-carted-products__items-description,
+.checkout-price-overview {
+   padding: 15px;
+   background-color: var(--bg-dark);
+   color: var(--text-light);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.specific-product-details__quantity-selector--checkout-grid {
+   order: 0;
+}
+
+.checkout-carted-products__items-description-price {
+   font-size: var(--font-p2);
+}
+
+.checkout-carted-products__price-trash-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.checkout-price-overview {
+   background-color: var(--bg-dark);
+   color: var(--text-light);
+}
+
+.checkout-price-overview__price {
+   display: grid;
+   padding: 20px 0;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+   border-bottom: 3px solid var(--border-light);
+   row-gap: 10px;
+}
+
+.checkout-price-overview__price-amount {
+   justify-self: right;
+}
+
+.checkout-price-overview__price-total {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 0;
+}
+
+.checkout-price-overview__checkout-btn-wrapper {
+   margin-top: 30px;
+   margin-bottom: 10px;
+   text-align: center;
 }
 
 /* Footer navigation -- used for all pages */
@@ -822,7 +923,6 @@ body {
    font-size: var(--font-p2);
    color: var(--text-light);
    line-height: 2rem;
-   text-decoration: none;
 }
 
 .footer-copyright {
