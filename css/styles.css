@@ -987,19 +987,18 @@ body {
 
 .contact-section__message-sent-success {
    position: fixed;
-   top: 0;
+   top: 0px;
    left: 0;
    height: 100%;
    width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
    background-color: rgba(251, 241, 221, 0.9);
    display: none;
 }
 
-.contact-section__form-area-submit-btn:visited ~ .contact-section__message-sent-success {
-   display: block;
+.contact-section__message-sent-success:target {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 /* Footer navigation -- used for all pages */
