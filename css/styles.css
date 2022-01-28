@@ -433,7 +433,7 @@ body {
 
 .product-collection-banner {
    min-width: 320px;
-   max-width: 1024px;
+   max-width: 1520px;
    margin: 0 auto;
    background-color: var(--bg-highlight);
 }
@@ -461,12 +461,13 @@ body {
    grid-template-columns: 287px;
    grid-template-rows: minmax(10px, auto) 224px;
    grid-gap: 48px 0px;
+   max-width: 295px;
 }
 
 .product-specific-banner__wrapper {
    margin: auto;
-   max-width: 335px;
-   height: 504px;
+   max-width: 300px;
+   height: 450px;
    padding: 20px;
    display: flex;
    align-items: end;
@@ -545,6 +546,10 @@ body {
    border-radius: 100%;
    text-align: center;
    align-self: end;
+}
+
+.product-collection-category__teacher-info {
+   font-size: var(--font-h6);
 }
 
 .product-specific-section {
@@ -650,28 +655,34 @@ body {
 /* Specific-Product-Page */
 
 .specific-product-details {
-   max-width: 1520px;
-   margin: auto;
+   max-width: 320px;
+   margin: 0 auto;
    background-color: var(--bg-light);
+   display: grid;
+   grid-template-rows: 456px auto;
 }
 
 .specific-product-details__img-carousel {
-   height: 456px;
+   max-width: 100%;
    background: url(/images/Canoer-jacket-img.jpg) no-repeat center/cover;
 }
 
 .specific-product-details__content {
-   height: 100%;
+   margin: auto;
    display: grid;
-   grid-template-columns: repeat(2, 150px);
+   grid-template-columns: repeat(2, 140px);
    grid-auto-rows: auto;
-   padding: 20px 10px;
+   padding: 20px;
    align-items: center;
    grid-gap: 22px 0px;
 }
 
 .specific-product-details__title {
    order: 1;
+}
+
+.specific-product-details__description-text {
+   margin: 10px 0;
 }
 
 .specific-product-details__price {
@@ -819,7 +830,8 @@ body {
 
 .checkout-section-wrapper {
    padding: 25px 15px;
-   min-width: 290px;
+   max-width: 290px;
+   margin: auto;
 }
 
 .checkout-return-btn-wrapper {
@@ -829,6 +841,7 @@ body {
 
 .checkout-carted-products {
    padding-top: 25px;
+   max-width: 320px;
    display: grid;
    grid-template-rows: auto auto auto;
    row-gap: 25px;
@@ -1018,9 +1031,9 @@ body {
    box-sizing: border-box;
    max-width: 320px;
    margin: auto;
-   padding: 0 10px;
+   padding: 0 20px;
    display: grid;
-   grid-template-columns: minmax(180px, 1fr) 1fr;
+   grid-template-columns: minmax(160px, 1fr) 1fr;
 }
 
 .footer-nav__jackets,
@@ -1066,6 +1079,11 @@ body {
       grid-template-columns: repeat(2, 312px);
    }
 
+   .product-collection-category--small {
+      grid-template-columns: 200px;
+   }
+
+   .product-collection-banner__title,
    .product-collection__title {
       grid-column: span 2;
       font-size: var(--font-h3);
@@ -1079,9 +1097,62 @@ body {
       grid-template-columns: repeat(3, minmax(160px, auto));
    }
 
+   .product-collection-banner__wrapper,
+   .product-specific-banner__wrapper {
+      max-width: 630px;
+      grid-template-columns: repeat(2, 286px);
+      column-gap: 50px;
+   }
+
    .product-specific-filter-buttons,
    .product-specific-section__title {
       grid-column: span 3;
+   }
+
+   .product-collection-category__teacher-info {
+      font-size: var(--font-h6);
+   }
+
+   .specific-product-details {
+      max-width: 665px;
+   }
+
+   .specific-product-details__title,
+   .specific-product-details__price {
+      font-size: var(--font-h3);
+   }
+
+   .specific-product-details__under-title,
+   .specific-product-details__review-rating,
+   .specific-product-details__color-options-title,
+   .specific-product-details__description-title {
+      font-size: var(--font-h6);
+   }
+
+   .specific-product-details__content {
+      grid-template-columns: repeat(2, 300px);
+      padding: 40px 20px;
+   }
+
+   .checkout-section-wrapper {
+      max-width: 735px;
+   }
+
+   .checkout-carted-products {
+      max-width: 735px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto 320px auto;
+      column-gap: 20px;
+   }
+
+   .checkout-carted-products__title,
+   .checkout-price-overview,
+   .product-collection-category__teacher-info {
+      grid-column: span 2;
+   }
+
+   .checkout-carted-products__items {
+      grid-template-columns: 185px auto;
    }
 
    .footer-wrapper {
@@ -1160,17 +1231,42 @@ body {
       grid-template-columns: repeat(3, 312px);
    }
 
-   .product-collection__title {
+   .product-collection-banner__title,
+   .product-collection__title,
+   .product-collection-category__teacher-info {
       grid-column: span 3;
    }
 
    .product-specific-section {
-      grid-template-columns: repeat(4, minmax(160px, auto));
+      grid-template-columns: repeat(4, minmax(244px, auto));
+   }
+
+   .product-collection-banner__wrapper,
+   .product-specific-banner__wrapper {
+      max-width: 1021px;
+      grid-template-columns: repeat(3, 286px);
+      column-gap: 20px;
    }
 
    .product-specific-filter-buttons,
    .product-specific-section__title {
       grid-column: span 4;
+   }
+
+   .specific-product-details {
+      max-width: 1520px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: var(--bg-light);
+      display: grid;
+      grid-template-rows: 920px;
+      grid-template-columns: minmax(300px, 770px) minmax(300px, 770px);
+      column-gap: 10px;
+   }
+
+   .specific-product-details__content {
+      grid-template-columns: repeat(2, minmax(100px, 370px));
+      padding: 0;
    }
 
    .footer-wrapper {
