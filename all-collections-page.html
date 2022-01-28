@@ -61,9 +61,8 @@
          </section>
          <section class="product-specific-section">
             <div class="product-specific-filter-buttons">
-               <label for="filter-menu__display-checkbox" class="cta cta--x-small-size cta--white">Filter</label>
-               <input type="checkbox" name="filter-menu-checkbox" id="filter-menu__display-checkbox" />
-               <div class="filter-menu">
+               <a href="#filter-menu-popup" class="cta cta--white cta--x-small-size">Filter</a>
+               <div id="filter-menu-popup" class="filter-menu">
                   <div class="filter-menu__header">
                      <p class="filter-menu__header-title">Filter</p>
                      <a href="all-collections-page.html" class="filter-menu__header-back-link">
@@ -111,7 +110,9 @@
                         </ul>
                      </div>
                   </div>
-                  <a href="all-collections-page.html" class="cta cta--small-btn cta--white filter-menu__show-results-btn">Show results</a>
+                  <div class="filter-menu__btn-wrapper">
+                     <a href="all-collections-page.html" class="filter-menu__show-results-btn cta cta--small-size cta--white">Show results</a>
+                  </div>
                </div>
             </div>
             <h2 id="all-jackets-anchor" class="product-specific-section__title">All jackets</h2>
