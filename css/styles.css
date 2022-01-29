@@ -76,7 +76,8 @@ body {
    font-family: var(--fontFamily-secondary), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
    font-weight: var(--fontWeight-medium);
    display: grid;
-   grid-template-rows: auto auto auto;
+   grid-template-rows: auto minmax(100vh, auto) auto;
+   align-items: center;
 }
 
 /* Mobile First Base Declarations -- 320 width -----------------------------------*/
@@ -588,7 +589,6 @@ body {
    grid-template-columns: 300px;
    grid-template-rows: 50px auto 100px;
    grid-auto-rows: auto;
-
    background-color: var(--bg-dark);
    color: var(--text-light);
    transition: top 4s ease-in;
@@ -926,7 +926,7 @@ body {
 .contact-section,
 .contact-section__wrapper {
    box-sizing: border-box;
-   max-width: 290px;
+   max-width: 300px;
    height: 290px;
    margin: 30px auto;
    background-color: var(--bg-dark);
@@ -945,11 +945,12 @@ body {
 
 .about-description {
    height: auto;
-   padding: 0;
+   padding: 30 20px;
 }
 
 .about-description__content {
-   padding: 20px;
+   font-size: var(--font-h6);
+   line-height: 2.8rem;
 }
 
 .about-description__content-title {
@@ -1000,6 +1001,11 @@ body {
    height: 100px;
    margin-bottom: 40px;
    padding-left: 10px;
+}
+
+.contact-section__form-area-submit-wrapper {
+   display: flex;
+   justify-content: center;
 }
 
 .contact-section__message-sent-success {
@@ -1089,6 +1095,12 @@ body {
       font-size: var(--font-h3);
    }
 
+   .filter-menu {
+      top: 120px;
+      left: 80px;
+      grid-template-columns: 630px;
+   }
+
    .product-category__title {
       font-size: var(--font-h4);
    }
@@ -1155,6 +1167,11 @@ body {
       grid-template-columns: 185px auto;
    }
 
+   .about-description,
+   .contact-section {
+      max-width: 620px;
+   }
+
    .footer-wrapper {
       max-width: 665px;
       grid-template-columns: minmax(380px, 1fr) 1fr;
@@ -1163,7 +1180,7 @@ body {
 
 /* 1240px -- laptop */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1240px) {
    .header-wrapper {
       max-width: 1240px;
    }
@@ -1231,6 +1248,11 @@ body {
       grid-template-columns: repeat(3, 312px);
    }
 
+   .filter-menu {
+      left: 150px;
+      grid-template-columns: 1030px;
+   }
+
    .product-collection-banner__title,
    .product-collection__title,
    .product-collection-category__teacher-info {
@@ -1267,6 +1289,17 @@ body {
    .specific-product-details__content {
       grid-template-columns: repeat(2, minmax(100px, 370px));
       padding: 0;
+   }
+
+   .about-description {
+      padding: 30px;
+      max-width: 1200px;
+      height: 770px;
+      flex-direction: row;
+   }
+
+   .about-description__content {
+      padding-right: 10px;
    }
 
    .footer-wrapper {
