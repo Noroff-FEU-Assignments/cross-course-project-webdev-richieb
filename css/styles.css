@@ -76,7 +76,7 @@ body {
    font-family: var(--fontFamily-secondary), sans-serif, Verdana, Geneva, Tahoma, sans-serif;
    font-weight: var(--fontWeight-medium);
    display: grid;
-   grid-template-rows: auto minmax(100vh, auto) auto;
+   grid-template-rows: auto minmax(67vh, auto) auto;
    align-items: center;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .header-nav__items {
-   padding: 15px;
+   padding: 5px;
 }
 
 .header-nav__list {
@@ -209,21 +209,25 @@ body {
 .cta--x-small-size {
    width: 130px;
    font-size: var(--font-p3);
+   font-weight: var(--fontWeight-semiBold);
 }
 
 .cta--small-size {
    width: 150px;
    font-size: var(--font-p3);
+   font-weight: var(--fontWeight-semiBold);
 }
 
 .cta--medium-size {
    width: 170px;
    font-size: var(--font-p2);
+   font-weight: var(--fontWeight-semiBold);
 }
 
 .cta--large-size {
    width: 200px;
    font-size: var(--font-p1);
+   font-weight: var(--fontWeight-bold);
 }
 
 .cta--yellow {
@@ -461,8 +465,9 @@ body {
    padding: 50px 16px;
    grid-template-columns: 287px;
    grid-template-rows: minmax(10px, auto) 224px;
-   grid-gap: 48px 0px;
+   grid-gap: 20px;
    max-width: 295px;
+   padding: 20px 0;
 }
 
 .product-specific-banner__wrapper {
@@ -489,12 +494,18 @@ body {
    position: relative;
    display: grid;
    grid-template-columns: 286px;
-   grid-template-rows: 168px 56px;
+   grid-template-rows: 168px auto;
+   transition: shadow 3s ease-in-out;
+   cursor: pointer;
+}
+
+.product-collection-category:hover {
+   box-shadow: 0 3px 6px var(--bg-dark);
 }
 
 .product-collection-category--small {
    grid-template-columns: 140px;
-   grid-template-rows: 208px 88px;
+   grid-template-rows: 208px auto;
 }
 
 .product-collection-category__discount {
@@ -525,7 +536,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 8px;
+   padding: 15px 10px;
    color: var(--text-light);
 }
 
@@ -547,6 +558,11 @@ body {
    border-radius: 100%;
    text-align: center;
    align-self: end;
+   transition: 0.2s ease-in-out;
+}
+
+.product-collection-category:hover > .product-collection-category__description .product-collection-category__icon-wrapper {
+   background-color: var(--bg-highlight);
 }
 
 .product-collection-category__teacher-info {
@@ -554,7 +570,7 @@ body {
 }
 
 .product-specific-section {
-   padding-bottom: 25px;
+   padding-bottom: 50px;
    display: grid;
    grid-template-columns: repeat(2, minmax(140px, auto));
    grid-template-rows: minmax(72px, auto) auto;
@@ -816,6 +832,10 @@ body {
    padding: 10px 0;
 }
 
+.specific-product-details__shipping-content-icon {
+   margin-right: 20px;
+}
+
 .specific-product-details__description-care-wrapper {
    order: 10;
    grid-column: span 2;
@@ -886,6 +906,14 @@ body {
 .checkout-carted-products__price-trash-wrapper {
    display: flex;
    justify-content: space-between;
+}
+
+.checkout-carted-products__price-trash-icon {
+   color: var(--bg-light);
+}
+
+.checkout-carted-products__price-trash-icon:hover {
+   color: var(--primary-btn-red);
 }
 
 .checkout-price-overview {
@@ -995,12 +1023,14 @@ body {
 .contact-section__form-area-input {
    margin-bottom: 10px;
    padding-left: 10px;
+   font-size: var(--font-p2);
 }
 
 .contact-section__form-area-textarea {
    height: 100px;
    margin-bottom: 40px;
    padding-left: 10px;
+   font-size: var(--font-p2);
 }
 
 .contact-section__form-area-submit-wrapper {
@@ -1086,7 +1116,7 @@ body {
    }
 
    .product-collection-category--small {
-      grid-template-columns: 200px;
+      grid-template-columns: auto;
    }
 
    .product-collection-banner__title,
@@ -1106,14 +1136,13 @@ body {
    }
 
    .product-specific-section {
-      grid-template-columns: repeat(3, minmax(160px, auto));
+      grid-template-columns: repeat(3, minmax(197px, auto));
    }
 
    .product-collection-banner__wrapper,
    .product-specific-banner__wrapper {
       max-width: 630px;
       grid-template-columns: repeat(2, 286px);
-      column-gap: 50px;
    }
 
    .product-specific-filter-buttons,
@@ -1169,7 +1198,13 @@ body {
 
    .about-description,
    .contact-section {
-      max-width: 620px;
+      max-width: 738px;
+      padding: 60px;
+   }
+
+   .contact-section__form-area-input,
+   .contact-section__form-area-textarea {
+      font-size: var(--font-p1);
    }
 
    .footer-wrapper {
@@ -1229,8 +1264,8 @@ body {
 
    .searchfield-container__input {
       padding: 10px;
-      max-width: 183px;
-      border-radius: 10px;
+      max-width: 182px;
+      border-radius: 10px 0 0 10px;
       border: 0;
       background-color: var(--bg-light);
       font-size: var(--font-p2);
@@ -1267,7 +1302,7 @@ body {
    .product-specific-banner__wrapper {
       max-width: 1021px;
       grid-template-columns: repeat(3, 286px);
-      column-gap: 20px;
+      justify-content: space-between;
    }
 
    .product-specific-filter-buttons,
