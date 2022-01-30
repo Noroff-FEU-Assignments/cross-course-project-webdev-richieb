@@ -589,12 +589,14 @@ body {
 .product-specific-filter-buttons {
    width: 100%;
    height: 100%;
-
    display: flex;
    justify-content: start;
    align-items: center;
-
    border-bottom: 3px solid var(--bg-dark);
+}
+
+.product-specific-filter-buttons__filter-menu-btn {
+   border-radius: 8px;
 }
 
 .filter-menu {
