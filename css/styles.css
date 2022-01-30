@@ -1006,6 +1006,7 @@ body {
 
 .contact-section__content {
    margin: 10px 0;
+   font-size: var(--font-h6);
 }
 
 .contact-section__form-area {
@@ -1198,7 +1199,7 @@ body {
 
    .about-description,
    .contact-section {
-      max-width: 738px;
+      max-width: 620px;
       padding: 60px;
    }
 
