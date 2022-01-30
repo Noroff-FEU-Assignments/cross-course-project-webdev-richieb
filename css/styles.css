@@ -478,6 +478,8 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: end;
+   object-fit: contain;
+   object-position: end;
 }
 
 .product-collection-banner__title {
