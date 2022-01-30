@@ -476,14 +476,14 @@ body {
    height: 450px;
    padding: 20px;
    display: flex;
-   align-items: end;
+   flex-direction: column;
+   justify-content: end;
 }
 
 .product-collection-banner__title {
    font-size: var(--font-h4);
    font-family: var(--fontFamily-primary);
    color: var(--text-dark);
-   object-fit: contain;
 }
 
 .product-collection-banner__title--color-light {
@@ -1303,7 +1303,6 @@ body {
    .product-specific-banner__wrapper {
       max-width: 1021px;
       grid-template-columns: repeat(3, 286px);
-      justify-content: space-between;
    }
 
    .product-specific-filter-buttons,
