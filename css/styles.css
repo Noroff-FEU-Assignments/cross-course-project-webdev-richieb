@@ -483,6 +483,7 @@ body {
    font-size: var(--font-h4);
    font-family: var(--fontFamily-primary);
    color: var(--text-dark);
+   object-fit: contain;
 }
 
 .product-collection-banner__title--color-light {
