@@ -476,10 +476,9 @@ body {
    height: 450px;
    padding: 20px;
    display: flex;
-   flex-direction: column;
-   justify-content: end;
-   object-fit: contain;
-   object-position: end;
+   display: grid;
+   grid-template-rows: auto;
+   align-items: end;
 }
 
 .product-collection-banner__title {
