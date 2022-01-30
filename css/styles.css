@@ -595,10 +595,6 @@ body {
    border-bottom: 3px solid var(--bg-dark);
 }
 
-.product-specific-filter-buttons__filter-menu-btn {
-   border-radius: 8px;
-}
-
 .filter-menu {
    z-index: 3;
    visibility: hidden;
