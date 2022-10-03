@@ -1137,7 +1137,7 @@ body {
    }
 
    .product-specific-section {
-      grid-template-columns: repeat(3, minmax(197px, auto));
+      grid-template-columns: repeat(3, 197px);
    }
 
    .product-collection-banner__wrapper,
@@ -1296,7 +1296,7 @@ body {
    }
 
    .product-specific-section {
-      grid-template-columns: repeat(4, minmax(244px, auto));
+      grid-template-columns: repeat(4, 244px);
    }
 
    .product-collection-banner__wrapper,
